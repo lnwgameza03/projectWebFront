@@ -8,10 +8,10 @@ import { UserManagementService } from '../../services/user-management.service';
 })
 export class UserManagementComponent implements OnInit {
 
-  private userList: User[];
-  private respone
-  private status: string;
-  private isEditable: boolean[];
+  userList: User[];
+  respone
+  status: string;
+  isEditable: boolean[];
 
   constructor(private userManagementService: UserManagementService) { }
 

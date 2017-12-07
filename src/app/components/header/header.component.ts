@@ -9,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-private isLogin;
+ isLogin;
 
   constructor(private loginService:LoginService,private router:Router) {
 
   }
 
   ngOnInit() {
-  }
+    this.isLogin = this.loginService.getUserLoggedIn() }
 
   logOut(){
 	this.loginService.setUserLoggedOut();
